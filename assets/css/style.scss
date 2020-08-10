@@ -24,6 +24,7 @@
     --yellow-600: #efb548;
     --light-grey: #efefef;
     --dark-grey: #8a8a8a;
+    --mobile-p-font: 0.6em;
     --yeseva-font: "Yeseva One";
     --montserrat-font: "Poppins";
 }
@@ -206,7 +207,7 @@ main {
             }
             p {
                 font-family: var(--montserrat-font);
-                font-size: 0.6em;
+                font-size: var(--mobile-p-font);
                 text-align: center;
                 margin: auto;
                 max-width: 70%;
@@ -263,7 +264,7 @@ main {
                     list-style: none;
                     li {
                         font-family: var(--montserrat-font);
-                        font-size: 0.8em;
+                        font-size: var(--mobile-p-font);
                         padding: 1em 0;
                         text-align: center;
                         font-weight: 500;
@@ -389,7 +390,7 @@ main {
 
                 p {
                     font-family: var(--montserrat-font);
-                    font-size: 0.6em;
+                    font-size: var(--mobile-p-font);
                     text-align: center;
                     margin: auto;
                     padding-top: 1em;
@@ -454,11 +455,14 @@ main {
                 @media (min-width: 600px) {
                     font-size: 1.5em;
                 }
+                @media (min-width: 800px) {
+                    font-size: 2em;
+                }
             }
 
             p {
                 font-family: var(--montserrat-font);
-                font-size: 0.6em;
+                font-size: var(--mobile-p-font);
                 text-align: center;
                 margin: auto;
                 max-width: 70%;
@@ -470,7 +474,6 @@ main {
                 @media (min-width: 1025px) {
                     text-align: center;
                     max-width: 70%;
-                    font-size: 1em;
                 }
             }
             button {

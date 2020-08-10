@@ -29,6 +29,7 @@
   --yellow-600: #efb548;
   --light-grey: #efefef;
   --dark-grey: #8a8a8a;
+  --mobile-p-font: 0.6em;
   --yeseva-font: "Yeseva One";
   --montserrat-font: "Poppins";
 }
@@ -300,7 +301,7 @@ main .cleaner_offers .cleaner_offers_title h1 {
 
 main .cleaner_offers .cleaner_offers_title p {
   font-family: var(--montserrat-font);
-  font-size: 0.6em;
+  font-size: var(--mobile-p-font);
   text-align: center;
   margin: auto;
   max-width: 70%;
@@ -404,7 +405,7 @@ main .cleaner_offers .cleaner_offers_rates .cleaner_offers_rate ul {
 
 main .cleaner_offers .cleaner_offers_rates .cleaner_offers_rate ul li {
   font-family: var(--montserrat-font);
-  font-size: 0.8em;
+  font-size: var(--mobile-p-font);
   padding: 1em 0;
   text-align: center;
   font-weight: 500;
@@ -607,7 +608,7 @@ main .cleaner_steps .cleaner_step .step_title h1 {
 
 main .cleaner_steps .cleaner_step .step_title p {
   font-family: var(--montserrat-font);
-  font-size: 0.6em;
+  font-size: var(--mobile-p-font);
   text-align: center;
   margin: auto;
   padding-top: 1em;
@@ -713,9 +714,15 @@ main .cleaner_about .about_title h1 {
   }
 }
 
+@media (min-width: 800px) {
+  main .cleaner_about .about_title h1 {
+    font-size: 2em;
+  }
+}
+
 main .cleaner_about .about_title p {
   font-family: var(--montserrat-font);
-  font-size: 0.6em;
+  font-size: var(--mobile-p-font);
   text-align: center;
   margin: auto;
   max-width: 70%;
@@ -733,7 +740,6 @@ main .cleaner_about .about_title p {
   main .cleaner_about .about_title p {
     text-align: center;
     max-width: 70%;
-    font-size: 1em;
   }
 }
 
